@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width; initial-scale=1" />
+    <title>Вакансии</title>
+    <link rel="stylesheet" href="/styles/main.css" />
+  </head>
+  <body>
+    <header class="vacancies-header container">
+      <a href="" class="vacancies-header__link">
+        <div class="vacancies-header__logo">
+          <img
+            class="vacancies-header__logo-image"
+            src="/images/logo.svg"
+            alt="Логотип"
+          />
+        </div>
+      </a>
+
+      <div class="vacancies-header__text">
+        <span class="vacancies-header__phone">+7 (495) 156 31 06</span>
+        <div class="vacancies-header__department">
+          <span>Департамент по работе </span><span> с персоналом</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="search container">
+        <h1 class="search-header">
+          <span>Наши вакансии</span> <span>в <span>городах России</span></span>
+        </h1>
+
+        <div class="search-bar">
+          <input
+            type="text"
+            placeholder="Начните поиск"
+            class="search-bar__input"
+            maxlength="60"
+          />
+          <button id="searchButton" class="search-bar__button">
+            <span class="search-bar__text">Найти</span>
+            <img src="/images/search.svg" alt="" class="search-bar__icon" />
+          </button>
+        </div>
+
+        <div class="search-img">
+          <img src="/images/back.png" />
+        </div>
+
+        <div class="search-used">
+          <span>Часто ищут:</span>
+          <span class="search-link">Менеджер по продажам</span>
+          <span class="search-link">Менеджер по работе с клиентами</span>
+          <span class="search-link">Монтажник</span>
+          <span class="search-link">Водитель</span>
+          <span class="search-link">Грузчик на склад</span>
+          <span class="search-link">Вахта</span>
+        </div>
+      </section>
+
+      <section class="vacancies container">
+        <h2 class="vacancies-head">Актуальные вакансии</h2>
+
+        <div class="vacancies-actual">
+          <button class="vacancies-actual__vacancy">
+            Все <span>(235)</span>
+          </button>
+          <button class="vacancies-actual__vacancy">
+            Москва <span>(25)</span>
+          </button>
+          <button class="vacancies-actual__vacancy">
+            Московская область <span>(25)</span>
+          </button>
+          <button class="vacancies-actual__vacancy">
+            Санкт-Петербург <span>(25)</span>
+          </button>
+          <button class="vacancies-actual__vacancy">
+            Калуга <span>(25)</span>
+          </button>
+          <button class="vacancies-actual__vacancy">
+            Лосино-Петровский <span>(25)</span>
+          </button>
+          <button class="vacancies-actual__vacancy">
+            Брянск <span>(25)</span>
+          </button>
+          <button class="vacancies-actual__vacancy">
+            Воронеж <span>(25)</span>
+          </button>
+          <button class="vacancies-actual__vacancy">
+            Гагарин <span>(25)</span>
+          </button>
+          <button class="vacancies-actual__vacancy">
+            Кострома <span>(25)</span>
+          </button>
+          <button class="vacancies-actual__vacancy">
+            Липецк <span>(25)</span>
+          </button>
+          <button class="vacancies-actual__vacancy">
+            Орёл <span>(25)</span>
+          </button>
+          <button class="vacancies-actual__vacancy">
+            Рязань <span>(25)</span>
+          </button>
+          <button class="vacancies-actual__vacancy">
+            Смоленск <span>(25)</span>
+          </button>
+          <button class="vacancies-actual__vacancy">
+            Тверь <span>(25)</span>
+          </button>
+          <button class="vacancies-actual__vacancy">
+            Тула <span>(25)</span>
+          </button>
+          <button class="vacancies-actual__vacancy">
+            Ярославль <span>(25)</span>
+          </button>
+        </div>
+
+        <div class="vacancies-cards">
+          <div class="vacancies-cards__card">
+            <div class="vacancies-cards__wrapper">
+              <div class="vacancies-card__vacancys"><span>Воронеж</span></div>
+              <div class="vacancies-cards__text">
+                <h3 class="vacancies-cards__title">
+                  <span>Менеджер по продажам</span>
+                </h3>
+                <span class="vacancies-cards__description"
+                  >поиск клиентов, продвижение товара, командировки для участия
+                  в выставках...</span
+                >
+              </div>
+            </div>
+            <div class="vacancies-cards__price">
+              <span class="vacancies-cards__salary">от 40 000 руб.</span>
+              <span class="vacancies-cards__additional"
+                >по итогам собеседования</span
+              >
+            </div>
+            <button class="vacancies-cards__apply">Откликнуться</button>
+          </div>
+        </div>
+
+        <div class="vacancies-pagination">
+          <div class="vacancies-pagination__numder">
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>...</button>
+            <button>67</button>
+            <button>68</button>
+          </div>
+
+          <button class="vacancies-pagination__show" @click="showMore">
+            Показать еще
+          </button>
+        </div>
+      </section>
+
+      <section class="resume container">
+        <div class="resume-header">
+          <h3 class="resume-header__title">
+            Не нашли что хотели или умеете лучше всего?
+          </h3>
+          <span class="resume-header__description"
+            >Возможно, мы еще не опубликовали то, что вам интересно
+          </span>
+        </div>
+        <button class="resume-btn open-modal-btn">Отправить резюме</button>
+
+        <div class="resume-img">
+          <img src="/images/resume.png" />
+        </div>
+      </section>
+
+      <section class="about container">
+        <h2 class="about-header">О компании «ДОМКОМ»</h2>
+        <div class="about-wrapper">
+          
+          <div class="about-left">
+            <p>Уже 25 лет компания «ДОМКОМ» работает на оконном рынке.</p>
+            <p>
+              Мы развиваемся и совершенствуемся, для того что бы предложить
+              клиентам качественные изделия, соответствующие высшим европейским
+              стандартам, помогающие создать максимально комфортную обстановку в
+              любом помещении.
+            </p>
+            <p>
+              Это подтверждено высоким званием «КОМПАНИЯ ГОДА» в номинации
+              лучший клиентский сервис, присужденной нашей компании в 2017 году
+              и другими наградами.
+            </p>
+          </div>
+
+          <div class="about-right">
+            <div class="about-right__item">
+              <span
+                >25 лет <br />
+                на рынке</span
+              >
+              <p>
+                Мы уже многое прошли, но нам есть ещё куда двигаться! Нам нужны
+                люди разделяющие наши ценности и желающие развиваться вместе с
+                нами
+              </p>
+            </div>
+
+            <div class="about-right__item">
+              <span
+                >36 <br />
+                регионов</span
+              >
+              <p>
+                Мы постоянно растём и развиваемся! У нас есть отлаженная система
+                открытия новых офисов в регионах и перспектива карьерного роста
+              </p>
+            </div>
+
+            <div class="about-right__item">
+              <span
+                >>1000 <br />
+                сотрудников</span
+              >
+              <p>
+                Мы даём людям рабочие места и способствуем развитию регионов!
+                Большинство наших сотрудников работают у нас по несколько лет
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="excursion container">
+        <h4 class="excursion__header">Экскурсия по предприятию</h4>
+
+        <div class="excursion__wrapper">
+          <div class="excursion__left">
+            <div class="excursion__item excursion__item--first">
+              <div class="excursion__icon-wrapper">
+                <img src="/images/sign.png" alt="" class="excursion__icon" />
+              </div>
+              <span class="excursion__quote"
+                >Мы стремимся <br />к новым стандартам<br />и всегда работаем на
+                будущее</span
+              >
+            </div>
+
+            <div class="excursion__item excursion__item--second">
+              <div class="excursion__image-wrapper">
+                <img
+                  src="/images/excursion-img.png"
+                  alt=""
+                  class="excursion__image"
+                />
+              </div>
+
+              <div class="excursion__text">
+                <span class="excursion__name">Иванов Иван Александрович</span>
+                <span class="excursion__position">
+                  Исполнительный директор<br />
+                  компании ДОМКОМ
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="excursion-right">
+            <video class="excursion-right__video" controls>
+              <source src="/videos/about.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="vacancies-footer">
+      <div class="vacancies-footer__container container">
+        <div class="vacancies-footer__wrapper">
+          <div class="vacancies-footer__left">
+            <a href="" class="vacancies-footer__logo-link">
+              <div class="vacancies-footer__logo">
+                <img
+                  class="vacancies-footer__logo-image"
+                  src="/images/logo.png"
+                  alt="Логотип"
+                />
+              </div>
+            </a>
+          </div>
+
+          <div class="vacancies-footer__center">
+            <a href="" class="vacancies-footer__link"
+              >Производство пластиковых окон</a
+            >
+            <a href="" class="vacancies-footer__link">Правовая информация</a>
+            <a href="" class="vacancies-footer__link">Условия использования</a>
+            <a href="" class="vacancies-footer__link">Карта сайта</a>
+          </div>
+
+          <div class="vacancies-footer__right">
+            <div class="vacancies-footer__contacts">
+              <span class="vacancies-footer__phone">+7 (495) 156 31 06</span>
+              <span class="vacancies-footer__email">help@oknadomkom.ru</span>
+            </div>
+
+            <div class="vacancies-footer__social">
+              <a href="#" class="vacancies-footer__social-link">
+                <img
+                  class="vacancies-footer__social-icon"
+                  src="/images/vk.png"
+                  alt="VK"
+                />
+              </a>
+              <a href="#" class="vacancies-footer__social-link">
+                <img
+                  class="vacancies-footer__social-icon"
+                  src="/images/rutube.png"
+                  alt="RuTube"
+                />
+              </a>
+              <a href="#" class="vacancies-footer__social-link">
+                <img
+                  class="vacancies-footer__social-icon"
+                  src="/images/ok.png"
+                  alt="OK"
+                />
+              </a>
+              <a href="#" class="vacancies-footer__social-link">
+                <img
+                  class="vacancies-footer__social-icon"
+                  src="/images/telegram.png"
+                  alt="Telegram"
+                />
+              </a>
+              <a href="#" class="vacancies-footer__social-link">
+                <img
+                  class="vacancies-footer__social-icon"
+                  src="/images/whatsapp.png"
+                  alt="WhatsApp"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <span class="vacancies-footer__copyright"
+          >© 1996—2024 Компания ДОМКОМ</span
+        >
+        <p class="vacancies-footer__disclaimer">
+          Информация, размещенная на нашем сайте, не является публичной офертой,
+          носит общий характер и служит для ознакомительных целей. Согласно
+          статьи 1259 Гражданского кодекса РФ, фотографии являются объектами
+          авторского права. Без согласия правообладателя, использование
+          фотографических произведений не допускается. Копирование и размещение
+          на других ресурсах контента, опубликованного на данном сайте, не
+          допускается!
+        </p>
+      </div>
+    </footer>
+
+    <div id="vacancyModal" class="vacancy-modal vacancy-modal__hidden">
+      <div class="vacancy-modal__content">
+        <button class="vacancy-modal__close">
+          <img src="/images/close.svg" alt="Закрыть" />
+        </button>
+
+        <div class="vacancy-modal__header">
+          <h2 class="vacancy-modal__title">Отправить резюме</h2>
+          <span class="vacancy-modal__subtitle">
+            Заполните поля, и мы свяжемся с Вами в ближайшее время
+          </span>
+        </div>
+
+        <form action="" class="vacancy-modal__form">
+          <div class="vacancy-modal__group">
+            <input
+              type="text"
+              class="vacancy-modal__input"
+              placeholder="Фамилия Имя Отчество"
+            />
+
+            <div class="vacancy-modal__row">
+              <input
+                type="text"
+                class="vacancy-modal__input"
+                placeholder="Город проживания"
+              />
+              <input
+                type="text"
+                class="vacancy-modal__input"
+                placeholder="Телефон"
+              />
+            </div>
+
+            <div class="vacancy-modal__row">
+              <input
+                type="text"
+                class="vacancy-modal__input"
+                placeholder="Желаемая должность"
+              />
+              <input
+                type="text"
+                class="vacancy-modal__input"
+                placeholder="Почта"
+              />
+            </div>
+
+            <div class="vacancy-modal__row">
+              <input
+                type="text"
+                class="vacancy-modal__input"
+                placeholder="Гражданство"
+              />
+              <input
+                type="text"
+                class="vacancy-modal__input"
+                placeholder="Добавить резюме (.doc)*"
+              />
+            </div>
+
+            <input
+              type="text"
+              class="vacancy-modal__input"
+              placeholder="Опыт работы в желаемой должности"
+            />
+
+            <textarea
+              class="vacancy-modal__textarea"
+              type="text"
+              placeholder="Напишите в нескольких словах о своем опыте работы"
+            ></textarea>
+          </div>
+
+          <div class="vacancy-modal__footer">
+            <span class="vacancy-modal__consent">
+              Нажимая “Отправить”, вы даете согласие на обработку
+              <a href="" class="vacancy-modal__link">персональных данных</a>
+            </span>
+            <button class="vacancy-modal__button">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src="/index.js"></script>

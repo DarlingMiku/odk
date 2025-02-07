@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вакансии</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slim-select@2.0/dist/slimselect.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/slim-select@2.0/dist/slimselect.min.js"></script>
+  </head>
+  <body>
+    <header class="vacancies-header container">
+      <a href="" class="vacancies-header__link">
+        <div class="vacancies-header__logo">
+          <img
+            class="vacancies-header__logo-image"
+            src="/images/logo.svg"
+            alt="Логотип"
+          />
+        </div>
+      </a>
+
+      <div class="vacancies-header__text">
+        <span class="vacancies-header__phone">+7 (495) 156 31 06</span>
+        <div class="vacancies-header__department">
+          <span>Департамент по работе </span><span> с персоналом</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="vacancy-about container">
+        <div class="vacancy-about__details">
+          <div class="vacancy-about__wrapper">
+            <div class="vacancy-about__location"><span>Смоленск</span></div>
+
+            <div class="vacancy-about__text">
+              <div class="vacancy-about__wrapper-text">
+                <h2 class="vacancy-about__title">
+                  Менеджер по расчетам (ОКНА ПВХ)
+                </h2>
+                <span class="vacancy-about__salary">ЗП по согласованию</span>
+              </div>
+              <p class="vacancy-about__description">
+                В крупную компанию-производитель окон пвх «ДОМКОМ» требуется
+                «Менеджер по расчету светопрозрачных конструкций»
+              </p>
+            </div>
+          </div>
+
+          <button class="vacancy-about__button open-modal-btn">
+            Заполнить анкету для отклика
+          </button>
+        </div>
+
+        <div class="vacancy-about__image-container">
+          <img src="/images/vacanc1y.png" alt="" class="vacancy-about__image" />
+        </div>
+      </section>
+
+      <section class="vacancy-info container">
+        <div class="vacancy-info__left">
+          <h5 class="vacancy-info__title">О вакансии</h5>
+          <div class="vacancy-info__info">
+            <div class="vacancy-info__info-item">
+              <img
+                class="vacancy-info__info-img"
+                src="/images/info-1.png"
+                alt=""
+              />
+              <span class="vacancy-info__info-text">ЗП по согласованию</span>
+            </div>
+            <div class="vacancy-info__info-item">
+              <img
+                class="vacancy-info__info-img"
+                src="/images/info-2.png"
+                alt=""
+              />
+              <span class="vacancy-info__info-text">Полный рабочий день</span>
+            </div>
+            <div class="vacancy-info__info-item">
+              <img
+                class="vacancy-info__info-img"
+                src="/images/info-3.png"
+                alt=""
+              />
+              <span class="vacancy-info__info-text">Вахта</span>
+            </div>
+            <div class="vacancy-info__info-item">
+              <img
+                class="vacancy-info__info-img"
+                src="/images/info-4.png"
+                alt=""
+              />
+              <span class="vacancy-info__info-text">Карьерный рост</span>
+            </div>
+            <div class="vacancy-info__info-item">
+              <img
+                class="vacancy-info__info-img"
+                src="/images/info-5.png"
+                alt=""
+              />
+              <span class="vacancy-info__info-text">Оформление по ТК РФ</span>
+            </div>
+          </div>
+
+          <div class="vacancy-info__section">
+            <h5 class="vacancy-info__title">Требования</h5>
+            <ul class="vacancy-info__list">
+              <li>
+                Опыт работы в менеджером по продажам оконной сфере от 1 года
+                ОБЯЗАТЕЛЕН;
+              </li>
+              <li>Знание производственной программы Профстрой (желательно);</li>
+              <li>Знание техник продаж;</li>
+              <li>
+                Коммуникабельность, ответственность, нацеленность на результат.
+              </li>
+            </ul>
+          </div>
+
+          <div class="vacancy-info__section">
+            <h5 class="vacancy-info__title">Обязанности</h5>
+            <ul class="vacancy-info__list">
+              <li>Работа с дилерами;</li>
+              <li>Предварительный расчет стоимости заказов в программе;</li>
+              <li>Полное сопровождение заключенных договоров;</li>
+              <li>Запуск заказов в производство.</li>
+            </ul>
+          </div>
+
+          <div class="vacancy-info__section">
+            <h5 class="vacancy-info__title">Работая у нас, вы получаете</h5>
+            <ul class="vacancy-info__list">
+              <li>
+                Стабильная работа в стабильной компании (25 лет на оконном
+                рынке);
+              </li>
+              <li>Высокие круглогодичные объёмы продаж;</li>
+              <li>
+                Небольшой дружный коллектив, состоящий из любящих своё дело
+                людей;
+              </li>
+              <li>Оформление по ТК РФ;</li>
+              <li>Перспектива карьерного роста;</li>
+              <li>График работы ПН-ПТ с 9.00 до 18.00.</li>
+            </ul>
+          </div>
+
+          <button class="vacancy-info__apply-btn open-modal-btn">
+            Заполнить анкету для отклика
+          </button>
+        </div>
+
+        <div class="vacancy-info__right">
+          <div class="vacancy-info__contacts">
+            <div class="vacancy-info__contacts-text">
+              <span class="vacancy-info__contacts-title"
+                >Связаться с менеджером</span
+              >
+
+              <div class="vacancy-info__contact-details">
+                <div class="vacancy-info__contact">
+                  <img src="/images/call-calling.svg" alt="" />
+                  <span>+7 (495) 032-21-03</span>
+                </div>
+
+                <div class="vacancy-info__contact">
+                  <img src="/images/sms-tracking.svg" alt="" />
+                  <span>artamonova@oknadomkom.ru</span>
+                </div>
+
+                <div class="vacancy-info__contact">
+                  <img src="/images/location.svg" alt="" />
+                  <span>г. Смоленск, ул. Свердлова, д. 24</span>
+                </div>
+
+                <div class="vacancy-info__contact">
+                  <img src="/images/clock.svg" alt="" />
+                  <span>Пн-Пт: 9.00 - 18.00 Сб, Вс: Выходной</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="vacancy-info__buttons">
+              <div class="vacancy-info__messengers">
+                <span class="vacancy-info__messengers-title">Мессенджеры</span>
+                <div class="vacancy-info__messengers-links">
+                  <a href="#" class="vacancy-info__messenger-link">
+                    <img
+                      class="vacancy-info__messenger-icon"
+                      src="/images/vk.svg"
+                      alt=""
+                    />
+                  </a>
+                  <a href="#" class="vacancy-info__messenger-link">
+                    <img
+                      class="vacancy-info__messenger-icon"
+                      src="/images/telegram.svg"
+                      alt=""
+                    />
+                  </a>
+                  <a href="#" class="vacancy-info__messenger-link">
+                    <img
+                      class="vacancy-info__messenger-icon"
+                      src="images/whatsapp.svg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+              </div>
+
+              <button class="vacancy-info__map-button">
+                <span class="vacancy-info__map-button-text"
+                  >Посмотреть на карте</span
+                >
+                <img
+                  class="vacancy-info__map-button-icon"
+                  src="/images/map.svg"
+                  alt=""
+                />
+              </button>
+            </div>
+          </div>
+
+          <div class="vacancy-vacancies">
+            <div class="vacancy-vacancies__card">
+              <div class="vacancy-vacancies__wrapper">
+                <div class="vacancy-about__location">
+                  <span>Смоленск</span>
+                </div>
+
+                <div class="vacancy-vacancies__text">
+                  <h3 class="vacancy-vacancies__title">Менеджер по продажам</h3>
+                  <span class="vacancy-vacancies__subtitle">
+                    поиск клиентов, продвижение товара, командировки для участия
+                    в выставках...
+                  </span>
+                </div>
+              </div>
+
+              <div class="vacancy-vacancies__details">
+                <span class="vacancy-vacancies__salary">от 80 000 руб.</span>
+                <span class="vacancy-vacancies__description"
+                  >по итогам собеседования</span
+                >
+              </div>
+            </div>
+
+            <div class="vacancy-vacancies__card">
+              <div class="vacancy-about__location">
+                <span>Смоленск</span>
+              </div>
+
+              <div class="vacancy-vacancies__text">
+                <h3 class="vacancy-vacancies__title">Грузчик на склад</h3>
+                <span class="vacancy-vacancies__subtitle">
+                  погрузка/разгрузка товара (Окна ПВХ, комплектующие), складские
+                  работы, поддержание чистоты и порядка на складе
+                </span>
+              </div>
+
+              <div class="vacancy-vacancies__details">
+                <span class="vacancy-vacancies__salary">от 80 000 руб.</span>
+                <span class="vacancy-vacancies__description"
+                  >по итогам собеседования</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <a href="" class="vacancy-info__link"
+            >Все вакансии региона<img src="/images/arrow-right.svg" alt=""
+          /></a>
+        </div>
+      </section>
+
+      <section class="resume vacancy-resume container">
+        <div class="resume-header">
+          <h3 class="resume-header__title">
+            Не нашли что хотели или умеете лучше всего?
+          </h3>
+          <span class="resume-header__description"
+            >Возможно, мы еще не опубликовали то, что вам интересно
+          </span>
+        </div>
+        <button class="resume-btn open-modal-btn">Отправить резюме</button>
+
+        <div class="resume-img">
+          <img src="/images/resume.png" />
+        </div>
+      </section>
+    </main>
+
+    <footer class="vacancies-footer">
+      <div class="vacancies-footer__container container">
+        <div class="vacancies-footer__wrapper">
+          <div class="vacancies-footer__left">
+            <a href="" class="vacancies-footer__logo-link">
+              <div class="vacancies-footer__logo">
+                <img
+                  class="vacancies-footer__logo-image"
+                  src="/images/logo.png"
+                  alt="Логотип"
+                />
+              </div>
+            </a>
+          </div>
+
+          <div class="vacancies-footer__center">
+            <a href="" class="vacancies-footer__link"
+              >Производство пластиковых окон</a
+            >
+            <a href="" class="vacancies-footer__link">Правовая информация</a>
+            <a href="" class="vacancies-footer__link">Условия использования</a>
+            <a href="" class="vacancies-footer__link">Карта сайта</a>
+          </div>
+
+          <div class="vacancies-footer__right">
+            <div class="vacancies-footer__contacts">
+              <span class="vacancies-footer__phone">+7 (495) 156 31 06</span>
+              <span class="vacancies-footer__email">help@oknadomkom.ru</span>
+            </div>
+
+            <div class="vacancies-footer__social">
+              <a href="#" class="vacancies-footer__social-link">
+                <img
+                  class="vacancies-footer__social-icon"
+                  src="/images/vk.png"
+                  alt="VK"
+                />
+              </a>
+              <a href="#" class="vacancies-footer__social-link">
+                <img
+                  class="vacancies-footer__social-icon"
+                  src="/images/rutube.png"
+                  alt="RuTube"
+                />
+              </a>
+              <a href="#" class="vacancies-footer__social-link">
+                <img
+                  class="vacancies-footer__social-icon"
+                  src="/images/ok.png"
+                  alt="OK"
+                />
+              </a>
+              <a href="#" class="vacancies-footer__social-link">
+                <img
+                  class="vacancies-footer__social-icon"
+                  src="/images/telegram.png"
+                  alt="Telegram"
+                />
+              </a>
+              <a href="#" class="vacancies-footer__social-link">
+                <img
+                  class="vacancies-footer__social-icon"
+                  src="/images/whatsapp.png"
+                  alt="WhatsApp"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+        <span class="vacancies-footer__copyright"
+          >© 1996—2024 Компания ДОМКОМ</span
+        >
+        <p class="vacancies-footer__disclaimer">
+          Информация, размещенная на нашем сайте, не является публичной офертой,
+          носит общий характер и служит для ознакомительных целей. Согласно
+          статьи 1259 Гражданского кодекса РФ, фотографии являются объектами
+          авторского права. Без согласия правообладателя, использование
+          фотографических произведений не допускается. Копирование и размещение
+          на других ресурсах контента, опубликованного на данном сайте, не
+          допускается!
+        </p>
+      </div>
+    </footer>
+
+    <div id="vacancyModal" class="vacancy-modal vacancy-modal__hidden">
+      <div class="vacancy-modal__content">
+        <button class="vacancy-modal__close">
+          <img src="/images/close.svg" alt="Закрыть" />
+        </button>
+
+        <div class="vacancy-modal__header">
+          <h2 class="vacancy-modal__title">Отправить резюме</h2>
+          <span class="vacancy-modal__subtitle">
+            Заполните поля, и мы свяжемся с Вами в ближайшее время
+          </span>
+        </div>
+
+        <form action="" class="vacancy-modal__form">
+          <div class="vacancy-modal__group">
+            <input
+              type="text"
+              class="vacancy-modal__input"
+              placeholder="Фамилия Имя Отчество"
+            />
+
+            <div class="vacancy-modal__row">
+              <input
+                type="text"
+                class="vacancy-modal__input"
+                placeholder="Город проживания"
+              />
+              <input
+                type="text"
+                class="vacancy-modal__input"
+                placeholder="Телефон"
+              />
+            </div>
+
+            <div class="vacancy-modal__row">
+              <select id="selectJob">
+                <option data-placeholder="true"></option>
+                <option value="1">Должность 1</option>
+                <option value="2">Должность 2</option>
+                <option value="3">Должность 3</option>
+                <option value="4">Должность 4</option>
+                <option value="5">Должность 5</option>
+                <option value="6">Должность 6</option>
+                <option value="7">Должность 7</option>
+                <option value="8">Должность 8</option>
+                <option value="9">Должность 9</option>
+                <option value="10">Должность 10</option>
+                <option value="11">Должность 11</option>
+                <option value="12">Должность 12</option>
+                <option value="13">Должность 13</option>
+                <option value="14">Должность 14</option>
+                <option value="15">Должность 15</option>
+                <option value="16">Должность 16</option>
+                <option value="17">Должность 17</option>
+                <option value="18">Должность 18</option>
+                <option value="19">Должность 19</option>
+                <option value="20">Должность 20</option>
+              </select>
+
+              <input
+                type="text"
+                class="vacancy-modal__input"
+                placeholder="Почта"
+              />
+            </div>
+
+            <div class="vacancy-modal__row">
+              <select id="selectNationality">
+                <option data-placeholder="true"></option>
+                <option value="1">Гражданство 1</option>
+                <option value="2">Гражданство 2</option>
+                <option value="3">Гражданство 3</option>
+                <option value="4">Гражданство 4</option>
+                <option value="5">Гражданство 5</option>
+                <option value="6">Гражданство 6</option>
+                <option value="7">Гражданство 7</option>
+                <option value="8">Гражданство 8</option>
+                <option value="9">Гражданство 9</option>
+                <option value="10">Гражданство 10</option>
+                <option value="11">Гражданство 11</option>
+                <option value="12">Гражданство 12</option>
+                <option value="13">Гражданство 13</option>
+                <option value="14">Гражданство 14</option>
+                <option value="15">Гражданство 15</option>
+                <option value="16">Гражданство 16</option>
+                <option value="17">Гражданство 17</option>
+                <option value="18">Гражданство 18</option>
+                <option value="19">Гражданство 19</option>
+                <option value="20">Гражданство 20</option>
+              </select>
+
+              <input
+                type="text"
+                class="vacancy-modal__input"
+                placeholder="Добавить резюме (.doc)*"
+              />
+            </div>
+
+            <input
+              type="text"
+              class="vacancy-modal__input"
+              placeholder="Опыт работы в желаемой должности"
+            />
+
+            <textarea
+              class="vacancy-modal__textarea"
+              type="text"
+              placeholder="Напишите в нескольких словах о своем опыте работы"
+            ></textarea>
+          </div>
+
+          <div class="vacancy-modal__footer">
+            <span class="vacancy-modal__consent">
+              Нажимая “Отправить”, вы даете согласие на обработку
+              <a href="" class="vacancy-modal__link">персональных данных</a>
+            </span>
+            <button class="vacancy-modal__button">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src="/index.js"></script>
