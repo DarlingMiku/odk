@@ -993,6 +993,10 @@ button {
   .excursion-right__video {
     width: 100%;
   }
+
+  .excursion__icon-wrapper{
+    margin-top: 0;
+  }
 }
 
 .vacancies-footer {
