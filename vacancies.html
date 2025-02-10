@@ -2,9 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width; initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Вакансии</title>
-    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/slim-select@2.0/dist/slimselect.css"
+  />
+  <script src="https://cdn.jsdelivr.net/npm/slim-select@2.0/dist/slimselect.min.js"></script>
   </head>
   <body>
     <header class="vacancies-header container">
@@ -118,6 +123,90 @@
         </div>
 
         <div class="vacancies-cards">
+          <div class="vacancies-cards__card">
+            <div class="vacancies-cards__wrapper">
+              <div class="vacancies-card__vacancys"><span>Воронеж</span></div>
+              <div class="vacancies-cards__text">
+                <h3 class="vacancies-cards__title">
+                  <span>Менеджер по продажам</span>
+                </h3>
+                <span class="vacancies-cards__description"
+                  >поиск клиентов, продвижение товара, командировки для участия
+                  в выставках...</span
+                >
+              </div>
+            </div>
+            <div class="vacancies-cards__price">
+              <span class="vacancies-cards__salary">от 40 000 руб.</span>
+              <span class="vacancies-cards__additional"
+                >по итогам собеседования</span
+              >
+            </div>
+            <button class="vacancies-cards__apply">Откликнуться</button>
+          </div>
+          <div class="vacancies-cards__card">
+            <div class="vacancies-cards__wrapper">
+              <div class="vacancies-card__vacancys"><span>Воронеж</span></div>
+              <div class="vacancies-cards__text">
+                <h3 class="vacancies-cards__title">
+                  <span>Менеджер по продажам</span>
+                </h3>
+                <span class="vacancies-cards__description"
+                  >поиск клиентов, продвижение товара, командировки для участия
+                  в выставках...</span
+                >
+              </div>
+            </div>
+            <div class="vacancies-cards__price">
+              <span class="vacancies-cards__salary">от 40 000 руб.</span>
+              <span class="vacancies-cards__additional"
+                >по итогам собеседования</span
+              >
+            </div>
+            <button class="vacancies-cards__apply">Откликнуться</button>
+          </div>
+          <div class="vacancies-cards__card">
+            <div class="vacancies-cards__wrapper">
+              <div class="vacancies-card__vacancys"><span>Воронеж</span></div>
+              <div class="vacancies-cards__text">
+                <h3 class="vacancies-cards__title">
+                  <span>Менеджер по продажам</span>
+                </h3>
+                <span class="vacancies-cards__description"
+                  >поиск клиентов, продвижение товара, командировки для участия
+                  в выставках...</span
+                >
+              </div>
+            </div>
+            <div class="vacancies-cards__price">
+              <span class="vacancies-cards__salary">от 40 000 руб.</span>
+              <span class="vacancies-cards__additional"
+                >по итогам собеседования</span
+              >
+            </div>
+            <button class="vacancies-cards__apply">Откликнуться</button>
+          </div>
+          <div class="vacancies-cards__card">
+            <div class="vacancies-cards__wrapper">
+              <div class="vacancies-card__vacancys"><span>Воронеж</span></div>
+              <div class="vacancies-cards__text">
+                <h3 class="vacancies-cards__title">
+                  <span>Менеджер по продажам</span>
+                </h3>
+                <span class="vacancies-cards__description"
+                  >поиск клиентов, продвижение товара, командировки для участия
+                  в выставках...</span
+                >
+              </div>
+            </div>
+            <div class="vacancies-cards__price">
+              <span class="vacancies-cards__salary">от 40 000 руб.</span>
+              <span class="vacancies-cards__additional"
+                >по итогам собеседования</span
+              >
+            </div>
+            <button class="vacancies-cards__apply">Откликнуться</button>
+          </div>
           <div class="vacancies-cards__card">
             <div class="vacancies-cards__wrapper">
               <div class="vacancies-card__vacancys"><span>Воронеж</span></div>
@@ -280,7 +369,7 @@
               <div class="vacancies-footer__logo">
                 <img
                   class="vacancies-footer__logo-image"
-                  src="/images/logo.png"
+                  src="/images/logo.svg"
                   alt="Логотип"
                 />
               </div>
@@ -306,35 +395,35 @@
               <a href="#" class="vacancies-footer__social-link">
                 <img
                   class="vacancies-footer__social-icon"
-                  src="/images/vk.png"
+                  src="/images/vk.svg"
                   alt="VK"
                 />
               </a>
               <a href="#" class="vacancies-footer__social-link">
                 <img
                   class="vacancies-footer__social-icon"
-                  src="/images/rutube.png"
+                  src="/images/rutube.svg"
                   alt="RuTube"
                 />
               </a>
               <a href="#" class="vacancies-footer__social-link">
                 <img
                   class="vacancies-footer__social-icon"
-                  src="/images/ok.png"
+                  src="/images/ok.svg"
                   alt="OK"
                 />
               </a>
               <a href="#" class="vacancies-footer__social-link">
                 <img
                   class="vacancies-footer__social-icon"
-                  src="/images/telegram.png"
+                  src="/images/telegram.svg"
                   alt="Telegram"
                 />
               </a>
               <a href="#" class="vacancies-footer__social-link">
                 <img
                   class="vacancies-footer__social-icon"
-                  src="/images/whatsapp.png"
+                  src="/images/viber.svg"
                   alt="WhatsApp"
                 />
               </a>
@@ -391,11 +480,30 @@
             </div>
 
             <div class="vacancy-modal__row">
-              <input
-                type="text"
-                class="vacancy-modal__input"
-                placeholder="Желаемая должность"
-              />
+              <select id="selectJob">
+                <option data-placeholder="true"></option>
+                <option value="1">Должность 1</option>
+                <option value="2">Должность 2</option>
+                <option value="3">Должность 3</option>
+                <option value="4">Должность 4</option>
+                <option value="5">Должность 5</option>
+                <option value="6">Должность 6</option>
+                <option value="7">Должность 7</option>
+                <option value="8">Должность 8</option>
+                <option value="9">Должность 9</option>
+                <option value="10">Должность 10</option>
+                <option value="11">Должность 11</option>
+                <option value="12">Должность 12</option>
+                <option value="13">Должность 13</option>
+                <option value="14">Должность 14</option>
+                <option value="15">Должность 15</option>
+                <option value="16">Должность 16</option>
+                <option value="17">Должность 17</option>
+                <option value="18">Должность 18</option>
+                <option value="19">Должность 19</option>
+                <option value="20">Должность 20</option>
+              </select>
+
               <input
                 type="text"
                 class="vacancy-modal__input"
@@ -404,23 +512,62 @@
             </div>
 
             <div class="vacancy-modal__row">
-              <input
-                type="text"
-                class="vacancy-modal__input"
-                placeholder="Гражданство"
-              />
-              <input
-                type="text"
-                class="vacancy-modal__input"
-                placeholder="Добавить резюме (.doc)*"
-              />
+              <select id="selectNationality">
+                <option data-placeholder="true"></option>
+                <option value="1">Гражданство 1</option>
+                <option value="2">Гражданство 2</option>
+                <option value="3">Гражданство 3</option>
+                <option value="4">Гражданство 4</option>
+                <option value="5">Гражданство 5</option>
+                <option value="6">Гражданство 6</option>
+                <option value="7">Гражданство 7</option>
+                <option value="8">Гражданство 8</option>
+                <option value="9">Гражданство 9</option>
+                <option value="10">Гражданство 10</option>
+                <option value="11">Гражданство 11</option>
+                <option value="12">Гражданство 12</option>
+                <option value="13">Гражданство 13</option>
+                <option value="14">Гражданство 14</option>
+                <option value="15">Гражданство 15</option>
+                <option value="16">Гражданство 16</option>
+                <option value="17">Гражданство 17</option>
+                <option value="18">Гражданство 18</option>
+                <option value="19">Гражданство 19</option>
+                <option value="20">Гражданство 20</option>
+              </select>
+
+              <button class="vacancy-modal__resume" id="uploadBtn">
+                <span id="fileText"
+                  >Добавить резюме (.doc)*</span
+                >
+              <img src="/images/add.svg" alt="" class="vacancy-modal__icon">
+              </button>
+              <input type="file" id="fileInput" accept=".doc,.docx" multiple class="vacancy-modal__file"/>
             </div>
 
-            <input
-              type="text"
-              class="vacancy-modal__input"
-              placeholder="Опыт работы в желаемой должности"
-            />
+            <select id="selectExp">
+              <option data-placeholder="true"></option>
+              <option value="1">Опыт 1</option>
+              <option value="2">Опыт 2</option>
+              <option value="3">Опыт 3</option>
+              <option value="4">Опыт 4</option>
+              <option value="5">Опыт 5</option>
+              <option value="6">Опыт 6</option>
+              <option value="7">Опыт 7</option>
+              <option value="8">Опыт 8</option>
+              <option value="9">Опыт 9</option>
+              <option value="10">Опыт 10</option>
+              <option value="11">Опыт 11</option>
+              <option value="12">Опыт 12</option>
+              <option value="13">Опыт 13</option>
+              <option value="14">Опыт 14</option>
+              <option value="15">Опыт 15</option>
+              <option value="16">Опыт 16</option>
+              <option value="17">Опыт 17</option>
+              <option value="18">Опыт 18</option>
+              <option value="19">Опыт 19</option>
+              <option value="20">Опыт 20</option>
+            </select>
 
             <textarea
               class="vacancy-modal__textarea"

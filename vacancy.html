@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Вакансии</title>
     <link rel="stylesheet" href="styles/main.css" />
     <link
@@ -57,7 +57,8 @@
         </div>
 
         <div class="vacancy-about__image-container">
-          <img src="/images/vacanc1y.png" alt="" class="vacancy-about__image" />
+          <div class="image-overlay"></div>
+          <img src="/images/vacancy.png" alt="" class="vacancy-about__image" />
         </div>
       </section>
 
@@ -68,7 +69,7 @@
             <div class="vacancy-info__info-item">
               <img
                 class="vacancy-info__info-img"
-                src="/images/info-1.png"
+                src="/images/info-1.svg"
                 alt=""
               />
               <span class="vacancy-info__info-text">ЗП по согласованию</span>
@@ -76,7 +77,7 @@
             <div class="vacancy-info__info-item">
               <img
                 class="vacancy-info__info-img"
-                src="/images/info-2.png"
+                src="/images/info-2.svg"
                 alt=""
               />
               <span class="vacancy-info__info-text">Полный рабочий день</span>
@@ -84,7 +85,7 @@
             <div class="vacancy-info__info-item">
               <img
                 class="vacancy-info__info-img"
-                src="/images/info-3.png"
+                src="/images/info-3.svg"
                 alt=""
               />
               <span class="vacancy-info__info-text">Вахта</span>
@@ -92,7 +93,7 @@
             <div class="vacancy-info__info-item">
               <img
                 class="vacancy-info__info-img"
-                src="/images/info-4.png"
+                src="/images/info-4.svg"
                 alt=""
               />
               <span class="vacancy-info__info-text">Карьерный рост</span>
@@ -100,7 +101,7 @@
             <div class="vacancy-info__info-item">
               <img
                 class="vacancy-info__info-img"
-                src="/images/info-5.png"
+                src="/images/info-5.svg"
                 alt=""
               />
               <span class="vacancy-info__info-text">Оформление по ТК РФ</span>
@@ -206,7 +207,7 @@
                   <a href="#" class="vacancy-info__messenger-link">
                     <img
                       class="vacancy-info__messenger-icon"
-                      src="images/whatsapp.svg"
+                      src="images/viber.svg"
                       alt=""
                     />
                   </a>
@@ -303,7 +304,7 @@
               <div class="vacancies-footer__logo">
                 <img
                   class="vacancies-footer__logo-image"
-                  src="/images/logo.png"
+                  src="/images/logo.svg"
                   alt="Логотип"
                 />
               </div>
@@ -329,35 +330,35 @@
               <a href="#" class="vacancies-footer__social-link">
                 <img
                   class="vacancies-footer__social-icon"
-                  src="/images/vk.png"
+                  src="/images/vk.svg"
                   alt="VK"
                 />
               </a>
               <a href="#" class="vacancies-footer__social-link">
                 <img
                   class="vacancies-footer__social-icon"
-                  src="/images/rutube.png"
+                  src="/images/rutube.svg"
                   alt="RuTube"
                 />
               </a>
               <a href="#" class="vacancies-footer__social-link">
                 <img
                   class="vacancies-footer__social-icon"
-                  src="/images/ok.png"
+                  src="/images/ok.svg"
                   alt="OK"
                 />
               </a>
               <a href="#" class="vacancies-footer__social-link">
                 <img
                   class="vacancies-footer__social-icon"
-                  src="/images/telegram.png"
+                  src="/images/telegram.svg"
                   alt="Telegram"
                 />
               </a>
               <a href="#" class="vacancies-footer__social-link">
                 <img
                   class="vacancies-footer__social-icon"
-                  src="/images/whatsapp.png"
+                  src="/images/viber.svg"
                   alt="WhatsApp"
                 />
               </a>
@@ -470,18 +471,38 @@
                 <option value="20">Гражданство 20</option>
               </select>
 
-              <input
-                type="text"
-                class="vacancy-modal__input"
-                placeholder="Добавить резюме (.doc)*"
-              />
+              <button class="vacancy-modal__resume" id="uploadBtn">
+                <span id="fileText"
+                  >Добавить резюме (.doc)*</span
+                >
+              <img src="/images/add.svg" alt="" class="vacancy-modal__icon">
+              </button>
+              <input type="file" id="fileInput" accept=".doc,.docx" multiple class="vacancy-modal__file"/>
             </div>
 
-            <input
-              type="text"
-              class="vacancy-modal__input"
-              placeholder="Опыт работы в желаемой должности"
-            />
+            <select id="selectExp">
+              <option data-placeholder="true"></option>
+              <option value="1">Опыт 1</option>
+              <option value="2">Опыт 2</option>
+              <option value="3">Опыт 3</option>
+              <option value="4">Опыт 4</option>
+              <option value="5">Опыт 5</option>
+              <option value="6">Опыт 6</option>
+              <option value="7">Опыт 7</option>
+              <option value="8">Опыт 8</option>
+              <option value="9">Опыт 9</option>
+              <option value="10">Опыт 10</option>
+              <option value="11">Опыт 11</option>
+              <option value="12">Опыт 12</option>
+              <option value="13">Опыт 13</option>
+              <option value="14">Опыт 14</option>
+              <option value="15">Опыт 15</option>
+              <option value="16">Опыт 16</option>
+              <option value="17">Опыт 17</option>
+              <option value="18">Опыт 18</option>
+              <option value="19">Опыт 19</option>
+              <option value="20">Опыт 20</option>
+            </select>
 
             <textarea
               class="vacancy-modal__textarea"
