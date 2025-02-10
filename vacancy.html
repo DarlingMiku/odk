@@ -13,15 +13,23 @@
   </head>
   <body>
     <header class="vacancies-header container">
-      <a href="" class="vacancies-header__link">
-        <div class="vacancies-header__logo">
-          <img
-            class="vacancies-header__logo-image"
-            src="/images/logo.svg"
-            alt="Логотип"
-          />
+      <div class="vacancies-header__wrapper">
+        <a href="" class="vacancies-header__link">
+          <div class="vacancies-header__logo">
+            <img
+              class="vacancies-header__logo-image"
+              src="/images/logo.svg"
+              alt="Логотип"
+            />
+          </div>
+        </a>
+
+        <div class="vacancies-header__breadcrumbs">
+          <a href="#" class="vacancies-header__breadcrumb-link">Главная</a>
+          <img src="/images/next.svg" alt="Следующий шаг" class="vacancies-header__breadcrumb-separator">
+          <span class="vacancies-header__breadcrumb-text">Вакансии</span>
         </div>
-      </a>
+      </div>
 
       <div class="vacancies-header__text">
         <span class="vacancies-header__phone">+7 (495) 156 31 06</span>
@@ -472,12 +480,16 @@
               </select>
 
               <button class="vacancy-modal__resume" id="uploadBtn">
-                <span id="fileText"
-                  >Добавить резюме (.doc)*</span
-                >
-              <img src="/images/add.svg" alt="" class="vacancy-modal__icon">
+                <span id="fileText">Добавить резюме (.doc)*</span>
+                <img src="/images/add.svg" alt="" class="vacancy-modal__icon" />
               </button>
-              <input type="file" id="fileInput" accept=".doc,.docx" multiple class="vacancy-modal__file"/>
+              <input
+                type="file"
+                id="fileInput"
+                accept=".doc,.docx"
+                multiple
+                class="vacancy-modal__file"
+              />
             </div>
 
             <select id="selectExp">
@@ -524,4 +536,4 @@
   </body>
 </html>
 
-<script src="/index.js"></script>
+<script src="index.js"></script>
