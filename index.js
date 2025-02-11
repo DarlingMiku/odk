@@ -25,17 +25,20 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".open-modal-btn").forEach((button) => {
     button.addEventListener("click", () => {
       modal.classList.remove("vacancy-modal__hidden");
+      document.querySelector('body').classList.add('modal-open');
     });
   });
 
   closeButton.addEventListener("click", () => {
     modal.classList.add("vacancy-modal__hidden");
+    document.querySelector('body').classList.remove('modal-open');
   });
 
 
   modal.addEventListener("click", (event) => {
     if (event.target === modal) {
       modal.classList.add("vacancy-modal__hidden");
+      document.querySelector('body').classList.remove('modal-open');
     }
   });
 });
