@@ -1,5 +1,3 @@
-@import url(/styles/modal.css);
-
 * {
   margin: 0;
   padding: 0;
@@ -75,8 +73,7 @@ button {
   font-size: 16px;
   line-height: 18px;
   letter-spacing: 0%;
-  color: #9A9B9B;
-
+  color: #9a9b9b;
 }
 
 .vacancies-header__text {
@@ -93,7 +90,7 @@ button {
 }
 
 @media screen and (max-width: 910px) {
-  .vacancies-header__breadcrumbs{
+  .vacancies-header__breadcrumbs {
     display: none;
   }
 
@@ -442,7 +439,7 @@ button {
   border-radius: 8px;
 }
 
-.vacancies-pagination__show {
+.vacancies-pagination__button {
   font-family: "Calibri";
   width: 285px;
   height: 54px;
@@ -454,6 +451,12 @@ button {
   line-height: 11px;
   color: #ffffff;
   background: #34b3eb;
+  transition: background-color 0.3s ease;
+}
+
+.vacancies-pagination__button:hover {
+  background-color: #008bdc;
+  transition: background-color 0.3s ease;
 }
 
 .resume {
@@ -497,6 +500,12 @@ button {
   background: #34b3eb;
   color: #ffffff;
   z-index: 1;
+  transition: background-color 0.3s ease;
+}
+
+.resume-btn:hover {
+  background-color: #008bdc;
+  transition: background-color 0.3s ease;
 }
 
 .resume img {
@@ -678,10 +687,6 @@ button {
 @media screen and (max-width: 510px) {
   .vacancies-cards {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .excursion__wrapper {
-    flex-direction: column;
   }
 }
 
@@ -920,11 +925,13 @@ button {
 .excursion-right__video {
   width: 100%;
   height: auto;
+  object-fit: cover;
   border-radius: 10px;
 }
 
 @media screen and (max-width: 1024px) {
   .excursion {
+    margin-top: -10px;
     margin-bottom: 50px;
     gap: 25px;
   }
@@ -981,6 +988,11 @@ button {
 }
 
 @media screen and (max-width: 700px) {
+  .excursion {
+    margin-top: 50px;
+    gap: 51px;
+  }
+
   .excursion__wrapper {
     flex-direction: column;
     gap: 40px;
@@ -994,8 +1006,15 @@ button {
     width: 100%;
   }
 
-  .excursion__icon-wrapper{
-    margin-top: 0;
+  .excursion-right {
+    max-width: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .excursion {
+    margin-top: 50px;
+    gap: 51px;
   }
 }
 
@@ -1209,6 +1228,12 @@ button {
   line-height: 10px;
   color: #ffffff;
   margin-top: auto;
+  transition: background-color 0.3s ease;
+}
+
+.vacancy-about__button:hover {
+  background-color: #008bdc;
+  transition: background-color 0.3s ease;
 }
 
 .vacancy-about__image-container {
@@ -1305,6 +1330,12 @@ button {
   line-height: 11px;
   color: #ffffff;
   text-wrap: nowrap;
+  transition: background-color 0.3s ease;
+}
+
+.vacancy-info__apply-btn:hover {
+  background-color: #008bdc;
+  transition: background-color 0.3s ease;
 }
 
 .vacancy-info__contacts-text {
@@ -1404,6 +1435,12 @@ button {
   line-height: 11px;
   text-wrap: nowrap;
   justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.vacancy-info__map-button:hover {
+  background-color: #008bdc;
+  transition: background-color 0.3s ease;
 }
 
 .vacancy-vacancies {
@@ -1655,6 +1692,7 @@ button {
   align-items: center;
   padding: 20px 10px;
   overflow: hidden;
+  overscroll-behavior: contain;
 }
 
 .vacancy-modal__content {
@@ -1737,6 +1775,7 @@ button {
   box-sizing: border-box;
   border: 1px solid #363b3e33;
   border-radius: 10px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
 }
 
 .vacancy-modal__input[type="text"] {
@@ -1763,6 +1802,7 @@ button {
   font-size: 18px;
   line-height: 100%;
   color: rgba(54, 59, 62, 0.6);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
 }
 
 .vacancy-modal__textarea[type="text"] {
@@ -1776,17 +1816,20 @@ button {
 .vacancy-modal__textarea:focus {
   box-shadow: 0px 9px 10.1px 0px #34b3eb1a;
   border: 1px solid #34b3eb80;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .vacancy-modal__input:active,
 .vacancy-modal__textarea:active {
   border: 1px solid #34b3eb;
+  transition: border-color 0.3s ease;
 }
 
 .vacancy-modal__input.error,
 .vacancy-modal__textarea.error {
   border: 1px solid #e7346e;
   color: #eb3493;
+  transition: border-color 0.3s ease, color 0.3s ease;
 }
 
 .vacancy-modal__footer {
@@ -1821,10 +1864,12 @@ button {
   line-height: 100%;
   color: #ffffff;
   justify-content: center;
+  transition: background-color 0.3s ease;
 }
 
 .vacancy-modal__button:hover {
   background-color: #008bdc;
+  transition: background-color 0.3s ease;
 }
 
 .vacancy-modal__button:disabled {

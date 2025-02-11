@@ -2,8 +2,7 @@ document.querySelectorAll(".search-used .search-link").forEach((item) => {
   item.addEventListener("click", (event) => {
     event.preventDefault();
     const input = document.querySelector(".search-bar__input");
-    input.value = this.textContent;  // Убираем лишнее обнуление
-    document.getElementById("searchButton").click();
+    input.value = this.textContent; 
   });
 });
 
@@ -15,6 +14,7 @@ document.querySelectorAll(".vacancies-actual__vacancy").forEach((button) => {
     this.classList.add("active");
   });
 });
+
 
 
 document.addEventListener("DOMContentLoaded", () => {

@@ -6,10 +6,10 @@
     <title>Вакансии</title>
     <link rel="stylesheet" href="styles/main.css" />
     <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/slim-select@2.0/dist/slimselect.css"
-  />
-  <script src="https://cdn.jsdelivr.net/npm/slim-select@2.0/dist/slimselect.min.js"></script>
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slim-select@2.0/dist/slimselect.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/slim-select@2.0/dist/slimselect.min.js"></script>
   </head>
   <body>
     <header class="vacancies-header container">
@@ -240,7 +240,7 @@
             <button>68</button>
           </div>
 
-          <button class="vacancies-pagination__show" @click="showMore">
+          <button class="vacancies-pagination__button">
             Показать еще
           </button>
         </div>
@@ -265,7 +265,6 @@
       <section class="about container">
         <h2 class="about-header">О компании «ДОМКОМ»</h2>
         <div class="about-wrapper">
-          
           <div class="about-left">
             <p>Уже 25 лет компания «ДОМКОМ» работает на оконном рынке.</p>
             <p>
@@ -353,9 +352,27 @@
             </div>
           </div>
           <div class="excursion-right">
+
             <video class="excursion-right__video" controls>
               <source src="/videos/about.mp4" type="video/mp4" />
             </video>
+
+            <div class="excursion-right__controls">
+
+              <button id="playPause">
+                <img
+                  src="/images/play.svg"
+                  alt=""
+                  class="excursion-right__play"
+                />
+              </button>
+
+              <div class="excursion-right__progress" id="progress">
+                <div class="excursion-right__bar" id="progressBar"></div>
+              </div>
+
+            </div>
+
           </div>
         </div>
       </section>
@@ -537,12 +554,16 @@
               </select>
 
               <button class="vacancy-modal__resume" id="uploadBtn">
-                <span id="fileText"
-                  >Добавить резюме (.doc)*</span
-                >
-              <img src="/images/add.svg" alt="" class="vacancy-modal__icon">
+                <span id="fileText">Добавить резюме (.doc)*</span>
+                <img src="/images/add.svg" alt="" class="vacancy-modal__icon" />
               </button>
-              <input type="file" id="fileInput" accept=".doc,.docx" multiple class="vacancy-modal__file"/>
+              <input
+                type="file"
+                id="fileInput"
+                accept=".doc,.docx"
+                multiple
+                class="vacancy-modal__file"
+              />
             </div>
 
             <select id="selectExp">
