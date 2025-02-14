@@ -1,4 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const hiddenModal = document.querySelector(".vacancy-modal__hidden");
+  hiddenModal.style.display = "none";
+
   document.querySelectorAll(".search-used .search-link").forEach((item) => {
     item.addEventListener("click", (event) => {
       event.preventDefault();
@@ -20,14 +23,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.querySelectorAll(".open-modal-btn").forEach((button) => {
     button.addEventListener("click", () => {
-      modal.classList.remove("vacancy-modal__hidden");
-      document.body.classList.add("modal-open");
+      modal.style.display = "flex";
+      
+      setTimeout(() => {
+        modal.classList.remove("vacancy-modal__hidden");
+        document.body.classList.add("modal-open");
+      }, 100)
+
     });
   });
 
+  
+
   const closeModal = () => {
     modal.classList.add("vacancy-modal__hidden");
-    document.body.classList.remove("modal-open");
+    
+    setTimeout(() => {
+      hiddenModal.style.display = "none";
+      document.body.classList.remove("modal-open");
+    }, 100)
+    
   };
 
   //валидация модалки
