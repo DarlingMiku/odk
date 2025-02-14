@@ -213,6 +213,14 @@
   align-items: center;
 }
 
+.upload-svg{
+  color: #008BDC;
+}
+
+.error .upload-svg{
+  color: #E7346E;
+}
+
 .vacancy-modal__icon {
   color: #34b3eb;
   font-weight: bold;
@@ -341,4 +349,19 @@
     max-width: none;
     width: 100%;
   }
+}
+
+
+.error{
+  color: #E7346E;
+  border-color: #E7346E !important; 
+  --ss-font-color: #E7346E;
+}
+
+.error .ss-placeholder{
+  color: #E7346E !important;
+}
+
+.error::placeholder{
+  color: #E7346E;
 }

@@ -480,6 +480,7 @@
             <input
               type="text"
               class="vacancy-modal__input"
+              name="name"
               placeholder="Фамилия Имя Отчество"
             />
 
@@ -487,17 +488,23 @@
               <input
                 type="text"
                 class="vacancy-modal__input"
+                name="City"
                 placeholder="Город проживания"
               />
               <input
                 type="text"
                 class="vacancy-modal__input"
+                name="phone"
+                type="tel"
                 placeholder="Телефон"
               />
             </div>
 
             <div class="vacancy-modal__row">
-              <select id="selectJob">
+              <select 
+                id="selectJob"
+                name="position"
+              >
                 <option data-placeholder="true"></option>
                 <option value="1">Должность 1</option>
                 <option value="2">Должность 2</option>
@@ -524,12 +531,17 @@
               <input
                 type="text"
                 class="vacancy-modal__input"
+                name="email"
+                type="email"
                 placeholder="Почта"
               />
             </div>
 
             <div class="vacancy-modal__row">
-              <select id="selectNationality">
+              <select 
+                name="nationality"
+                id="selectNationality"
+              >
                 <option data-placeholder="true"></option>
                 <option value="1">Гражданство 1</option>
                 <option value="2">Гражданство 2</option>
@@ -555,18 +567,25 @@
 
               <button class="vacancy-modal__resume" id="uploadBtn">
                 <span id="fileText">Добавить резюме (.doc)*</span>
-                <img src="/images/add.svg" alt="" class="vacancy-modal__icon" />
+                <svg class="upload-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6 12H18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12 18V6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
               </button>
               <input
                 type="file"
                 id="fileInput"
                 accept=".doc,.docx"
+                name="file"
                 multiple
                 class="vacancy-modal__file"
               />
             </div>
 
-            <select id="selectExp">
+            <select 
+              id="selectExp"
+              name="experience"
+            >
               <option data-placeholder="true"></option>
               <option value="1">Опыт 1</option>
               <option value="2">Опыт 2</option>
@@ -593,6 +612,7 @@
             <textarea
               class="vacancy-modal__textarea"
               type="text"
+              name="prevExp"
               placeholder="Напишите в нескольких словах о своем опыте работы"
             ></textarea>
           </div>
@@ -607,7 +627,6 @@
         </form>
       </div>
     </div>
+    <script src="/index.js"></script>
   </body>
 </html>
-
-<script src="/index.js"></script>
